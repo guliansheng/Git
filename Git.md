@@ -27,7 +27,7 @@
 
 - git status / git status -s : 查看当前文件状态
 
-- git add a.txt : 将a.txt文件讲给git管理
+- git add a.txt : 将a.txt文件交给git管理
 
 - git add . : 将目录中的所有文件讲给git管理
 
@@ -37,17 +37,23 @@
 
 - git log : 查看文件所有版本信息
 
-- git reflog : 得到操作的版本id信息 
+- git reflog : 得到操作的版本id信息, 可以查看当前版本到其他版本需要回退多少步
 
 - git reset --hard [版本号的前几位] : 将文件恢复到对应的版本
 
 - git log --pretty=oneline : 在一行显示版本信息
+
+- git log --oneline : 在一行显示信息, 比上面的还要简洁
 
 - git reset HEAD [文件名] : 用HEAD(最新版本中的文件)替换该文件,这个文件可能已经提交到了暂存区,此时需要用该方法还原
 
 - git rm [文件名] : 将文件删除 , 同时将暂存区中的文件也删除
 
 - git rm --cached [文件名] : 删除暂存区中的文件
+
+- git diff [文件名] : 查看文件修改的差异
+
+- git diff [版本号]  [文件名] : 查看当前版本的文件和其他版本文件的差异 
 
 ####git状态
 - 工作区 : 执行git init的文件夹
